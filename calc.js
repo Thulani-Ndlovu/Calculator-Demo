@@ -12,6 +12,9 @@ function Sub(num1, num2){
     return num1 - num2;
 }
 
+function Div(num1, num2){
+    return num1 / num2;
+}
 
 
 // Main Calaculator
@@ -23,8 +26,12 @@ function calculator(type, num1, num2){
     if (type === "sub"){
         return Sub(num1, num2);
     }
+    if (type === "div"){
+        return Div(num1, num2);
+    }
 }
 
 
 console.log(calculator("add", 5, 5));
 console.log(calculator("sub", 10, 5));
+console.log(calculator("div", 20, 4));
