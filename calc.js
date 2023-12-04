@@ -8,7 +8,9 @@ function Add(num1, num2){
     return num1 + num2;
 }
 
-
+function Sub(num1, num2){
+    return num1 - num2;
+}
 
 
 
@@ -18,7 +20,11 @@ function calculator(type, num1, num2){
     if(type === "add"){
         return Add(num1, num2);
     }
+    if (type === "sub"){
+        return Sub(num1, num2);
+    }
 }
 
 
 console.log(calculator("add", 5, 5));
+console.log(calculator("sub", 10, 5));
